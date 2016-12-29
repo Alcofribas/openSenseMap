@@ -1,5 +1,7 @@
 FROM digitallyseamless/nodejs-bower-grunt:4
 
+COPY ./bin/bro /usr/bin/bro
+
 # Setup build folder
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
